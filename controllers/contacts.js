@@ -12,10 +12,10 @@ const getAllContacts = async (req, res) => {
 };
 
 const getContactById = async (req, res) => {
-    const contactId = new ObjectId(req.params.id);
-     try {
+  const contactId = new ObjectId(req.params.id);
+  try {
     const db = mongodb.getDatabase();
-    const contacts = await db.collection('contacts').find({_id: contactId}).toArray();
+    const contacts = await db.collection('contacts').find({ _id: contactId }).toArray();
     res.status(200).json(contacts);
   } catch (err) {
     res.status(500).json({ error: err.message });

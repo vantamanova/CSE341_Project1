@@ -6,10 +6,13 @@ router.get('/db', async (req, res) => {
   try {
     const db = getDatabase();
     const collections = await db.listCollections().toArray();
-    const count = await db.collection('contacts').countDocuments().catch(() => -1);
+    const count = await db
+      .collection('contacts')
+      .countDocuments()
+      .catch(() => -1);
     res.json({
       databaseName: db.databaseName,
-      collections: collections.map(c => c.name),
+      collections: collections.map((c) => c.name),
       contactsCount: count
     });
   } catch (e) {

@@ -1,25 +1,23 @@
-
-
-    {
-        "firstName": "Daniil", 
-        "lastName": "Antamanov",
-        "email": "daniilantamanov@gmail.com",
-        "favoriteColor": "Red",
-        "birthday": "2016-02-17"
-    }
-
-    {
-        "firstName": "Sofia", 
-        "lastName": "Antamanova",
-        "email": "sofiaantamanova@gmail.com",
-        "favoriteColor": "Pink",
-        "birthday": "2018-04-17"
-    }
-
-    {
-        "firstName": "Sergey", 
-        "lastName": "Antamanov",
-        "email": "sergeyantamanov@gmail.com",
-        "favoriteColor": "Green",
-        "birthday": "1988-08-30"
-    }
+{
+  "contact1": {
+    "firstName": "Daniil",
+    "lastName": "Antamanov",
+    "email": "daniilantamanov@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "2016-02-17"
+  },
+  "contact2": {
+    "firstName": "Sofia",
+    "lastName": "Antamanova",
+    "email": "sofiaantamanova@gmail.com",
+    "favoriteColor": "Pink",
+    "birthday": "2018-04-17"
+  },
+  "contact3": {
+    "firstName": "Sergey",
+    "lastName": "Antamanov",
+    "email": "sergeyantamanov@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "1988-08-30"
+  }
+}
