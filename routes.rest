@@ -5,3 +5,32 @@ Content-Type: application/json
 ### Get a contact by ID
 GET http://localhost:3000/contacts/68baa22497af4b860190a776
 Content-Type: application/json
+
+### Create a new contact
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+    "firstName":"Daniil",
+    "lastName":"Antamanov",
+    "email":"daniilantamanov@gmail.com",
+    "favoriteColor":"Red",
+    "birthday":"2016-02-17"
+}
+
+### Update an existing contact
+PUT http://localhost:3000/contacts/68c293225674a00bb5afea7a
+Content-Type: application/json
+
+{
+    "firstName":"Daniil",
+    "lastName":"Antamanov",
+    "email":"daniilantamanov@gmail.com",
+    "favoriteColor":"Blue",
+    "birthday":"2016-02-17"
+}               
+
+### Delete a contact
+DELETE http://localhost:3000/contacts/68c292d77171eefd5f00dd7e
+Content-Type: application/json          
+
